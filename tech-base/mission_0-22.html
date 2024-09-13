@@ -1,0 +1,39 @@
+<!--  離れた部分でも同じ装飾を指定してみよう：class属性と<style>  -->
+<head>
+    <meta charset="UTF-8">
+    <title>mission_1-22</title>
+    <style>
+        .class1{
+            background-color: yellow;
+        }
+        .class2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1">あいうえお</div>
+    <div class="class2">かきくけこ</div>
+    <div class="class1 class2">さしすせそ</div>
+</body>
+
+<!-- 手順としては下記の通りになります。
+１）同じ装飾を施す部分に名前を付ける(例：class1)
+２）どのような装飾を施すか、決める（例：背景色を黄色にする）
+３）装飾内容をstyleタグを使って記述する
+４）同じ装飾を施す部分をdivタグとclass属性を使って、指定する　-->
+
+
+<!-- 上記の記述で注意点としては、
+・styleタグはhead内に記述する。
+・classは下記のように記述する。（必ずstyle属性の最後に;（セミコロン））
+<head>
+<style>
+.class名{
+style属性;
+}
+</style>
+</head>
+
+・class属性はdivタグ内に記述する。
+<div class="class名"> -->
